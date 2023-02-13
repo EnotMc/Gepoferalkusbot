@@ -3,7 +3,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
 import settings
 
-logging.basicConfig(filename='bot.log', level=logging.INFO)
+logging.basicConfig(level=logging.INFO)
 
 def greet_user(update, context):
     print('Вызван /start')
@@ -27,6 +27,3 @@ def main():
     
 if __name__ == '__main__':
     main()
-    
-    # Если я нашел в VS ошибку и испраил, как сделать так, что бы на сайте гитхаб тоже исправилось?
-    # Я исправил код в тт боте через VS, но на сайте он остался старым.
